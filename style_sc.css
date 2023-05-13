@@ -11,13 +11,19 @@ ul {
 * {box-sizing: border-box;}
 
 body { 
-  margin: 100px;
+  
+  margin:100px;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
+  scrollbar-width: none;
+  border-style: none;
+  margin: 0%;
 }
 
 .header {
   overflow: hidden;
-  background-color:#e4b055;
+  background-color: #e4b055;
   padding: 0;
   
 }
@@ -60,13 +66,18 @@ body {
     background-position: 10px;
     text-shadow: black;
     font-size: 30px;
-    position: sticky;
     
   }
   .about
   {
     display:block;
     margin:100px;
+  }
+  .content
+  {
+    padding-left:50px;
+    padding-right: 50px;
+    padding-top: 10px;
   }
   .content h1
   {
@@ -101,71 +112,22 @@ body {
     border: 0px;
     justify-content: space-between;
   }
-  body
-  {
-    scroll-behavior: auto;
-    scrollbar-width: none;
-    border-style: none;
-    margin: 0%;
-  }
+
   .slider {
     width: 500px;
     height: 300px;
-    background-color: yellow;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     text-align: center;
     overflow: hidden;
   }
-  .image-container {
-    width: 1500px;
-    background-color: pink;
-    height: 300px;
-    clear: both;
-    position: relative;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
-  }
-  .slide {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-  }
-  #slide-1:target ~ .image-container {
-    left: 0px;
-  }
-  #slide-2:target ~ .image-container {
-    left: -500px;
-  }
-  #slide-3:target ~ .image-container {
-    left: -1000px;
-  }
-  #slide-4:target ~ .image-container {
-    left: -1500px;
-  }
-  #slide-5:target ~ .image-container {
-    left: -2000px;
-  }
-  .buttons {
-    position: relative;
-    top: -20px;
-  }
-  .buttons a {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 10px;
-    background-color: rgb(154, 153, 153);
-  }
+  
 .footer
 {
   display: block;
   margin-top: 100px;
-  padding:100 px 0;
   background-color: #e4b055;
 }
 .footer .social
@@ -206,28 +168,19 @@ body {
 .copyright
 {
   margin-bottom: 0;
-  padding: 10px;
   text-align: center;
   color:azure;
 }
-.partners
-{
-  display: inline-block;
-  padding: 50px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-
-}
-.partners a:hover
-{
-  opacity: 0.7;
-}
 .logos
 {
+  background-color: white;
+  
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left:50px;
+  margin-right: 50px;
   padding:25px
 }
 .logos a:hover {
